@@ -1,0 +1,18 @@
+.app-comp{ 
+
+&__title{
+  text-align: center;
+  font-size: 25px;
+}
+
+&__list-item {
+  list-style: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+&__link {
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+}
+}

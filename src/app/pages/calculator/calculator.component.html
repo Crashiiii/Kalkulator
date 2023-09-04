@@ -1,0 +1,29 @@
+<div class="calculator">
+  <input class="calculator__calculated" type="text" [(ngModel)]="Calculated">
+  <div class="calculator__buttons">
+    <button class="calculator__buttoncolor" (click)="calculatePrecent('/100')">%</button>
+    <button class="calculator__buttoncolor" (click)="calculateBack()">Ce</button>
+    <button class="calculator__buttoncolor" (click)="clearCalculate()">C</button>
+    <button class="calculator__buttoncolor" (click)="calculateBack()"><=</button>
+    <button class="calculator__buttoncolor" (click)="calculatedivide()">1/x</button>
+    <button class="calculator__buttoncolor" (click)="calculatePower('*')">^</button>
+    <button class="calculator__buttoncolor" (click)="calculateSqrt('')">√</button>
+    <button class="calculator__buttoncolor" (click)="toCalculate('/')">/</button>
+    <button class="calculator__button" (click)="toCalculate('7')">7</button>
+    <button class="calculator__button" (click)="toCalculate('8')">8</button>
+    <button class="calculator__button" (click)="toCalculate('9')">9</button>
+    <button class="calculator__buttoncolor" (click)="toCalculate('*')">X</button>
+    <button class="calculator__button" (click)="toCalculate('4')">4</button>
+    <button class="calculator__button" (click)="toCalculate('5')">5</button>
+    <button class="calculator__button" (click)="toCalculate('6')">6</button>
+    <button class="calculator__buttoncolor" (click)="toCalculate('-')">-</button>
+    <button class="calculator__button" (click)="toCalculate('1')">1</button>
+    <button class="calculator__button" (click)="toCalculate('2')">2</button>
+    <button class="calculator__button" (click)="toCalculate('3')">3</button>
+    <button class="calculator__buttoncolor" (click)="toCalculate('+')">+</button>
+    <button class="calculator__buttoncolor" (click)="calculateSign()">+/-</button>
+    <button class="calculator__button" (click)="toCalculate('0')">0</button>
+    <button class="calculator__buttoncolor" (click)="toCalculate('.')">,</button>
+    <button class="calculator__buttoncolor" (click)="calculate()">=</button>
+  </div>
+</div>
