@@ -24,13 +24,13 @@ export class CalculatorComponent {
     this.Calculated = this.calculatorService.evaluateExpression(this.Calculated);
   }
 
-  calculatePower(value: string) {
+  calculatePower() {
     const number = parseFloat(this.Calculated);
     const result = Math.pow(number, 2);
     this.Calculated = result.toString();
   }
 
-  calculateSqrt(value: string) {
+  calculateSqrt() {
     this.Calculated = 'Math.sqrt(' + this.Calculated + ')';
     this.Calculated = this.calculatorService.evaluateExpression(this.Calculated);
   }
